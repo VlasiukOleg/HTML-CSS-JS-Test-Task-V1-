@@ -1,0 +1,14 @@
+body {
+  background-color: getBg-color('primary');
+  color: getColor('primary');
+
+  @include font();
+
+  font-family: 'Montserrat', sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

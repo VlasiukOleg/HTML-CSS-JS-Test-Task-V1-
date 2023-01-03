@@ -1,0 +1,155 @@
+.page-details {
+  padding-top: 38px;
+  padding-bottom: 113px;
+}
+
+.page-details__title {
+  @include font(30, 300, 38, 0.01);
+  text-align: end;
+
+  padding-right: 38px;
+
+  margin-bottom: 50px;
+}
+
+.page-details__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.comment {
+  width: 485px;
+
+  padding: 27px 40px 46px 37px;
+
+  background-color: getBg-color('general-white');
+  border-radius: 36px;
+  box-shadow: 0px 2.84946px 28.4946px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.comment__userpic {
+  border-radius: 50%;
+
+  margin-right: 28px;
+}
+
+.comment__name {
+  @include font(20, 600, 25, 0.01);
+  display: flex;
+  flex-direction: column;
+
+  &--subname {
+    font-weight: 400;
+  }
+}
+
+.comment__description {
+  max-width: 310px;
+  text-align: center;
+  margin-left: auto;
+
+  @include font(19, 300, 24, 0.01);
+  font-style: italic;
+}
+
+.comment-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.info-block {
+  display: flex;
+  flex-wrap: wrap;
+
+  max-width: 682px;
+
+  padding: 41px 61px 80px 59px;
+
+  background-color: getBg-color('accent');
+  box-shadow: 0px 4px 28.49px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+
+  overflow: hidden;
+}
+
+.info-block__text {
+  display: inline-block;
+  max-width: 292px;
+
+  margin-bottom: 42px;
+  margin-right: 20px;
+
+  @include font(34, 800, 38);
+  color: getColor('general-white');
+}
+
+.info-block__list {
+  @extend %list;
+}
+
+.info-block__item {
+  max-width: 250px;
+
+  padding: 18px 18px 26px 26px;
+
+  background-color: getBg-color('general-white');
+
+  border-radius: 20px;
+}
+
+.info-block__wrapper {
+  margin-top: 30px;
+}
+
+.info-block__caption {
+  @include font(13, 600, 16, 0.02);
+  color: getColor('secondary');
+
+  margin-bottom: 10px;
+}
+
+.info-block__data {
+  display: flex;
+  align-items: baseline;
+
+  margin-bottom: 6px;
+
+  @include font(23, 600, 28, 0.02);
+  color: getColor('secondary');
+
+  &--percentup {
+    margin-left: 9px;
+
+    @include font(13, 600, 16, 0.02);
+    color: #fe805c;
+  }
+
+  &--arrowup {
+    display: inline-block;
+
+    width: 10px;
+    height: 9px;
+  }
+
+  &--percentdown {
+    margin-left: 9px;
+
+    @include font(13, 600, 16, 0.02);
+    color: #4643d3;
+  }
+
+  &--arrowup {
+    display: inline-block;
+
+    width: 10px;
+    height: 9px;
+  }
+}
+
+.info-block__descr {
+  @include font(11, 400, 14, 0.01);
+  color: getColor('additional');
+}

@@ -1,0 +1,10 @@
+.page-hero__title {
+  max-width: 464px;
+
+  @include font(58, 700, 64, 0.01);
+}
+
+.page-hero__container {
+  padding-top: 63px;
+  padding-left: 54px;
+}

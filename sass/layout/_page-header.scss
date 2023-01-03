@@ -1,0 +1,31 @@
+.page-header {
+  background-color: getBg-color('accent');
+}
+
+.page-header__container {
+  padding-left: 71px;
+}
+
+.page-header__logo {
+  @extend %link;
+  display: inline-flex;
+  align-items: center;
+
+  padding-top: 29px;
+  padding-bottom: 29px;
+
+  @include font(21, 700, 25, 0.01);
+
+  @extend %link;
+
+  color: getColor('general-white');
+
+  &::before {
+    content: '';
+    width: 29px;
+    height: 21px;
+    background-image: url(../../images/logo.svg);
+    background-size: cover;
+    margin-right: 20px;
+  }
+}
