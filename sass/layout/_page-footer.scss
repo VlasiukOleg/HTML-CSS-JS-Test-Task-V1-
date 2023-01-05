@@ -1,0 +1,24 @@
+.page-footer {
+  padding-bottom: 58px;
+
+  text-align: center;
+}
+
+.page-footer__caption {
+  @include font(26, 200, 28);
+
+  margin-bottom: 20px;
+}
+
+.page-footer__copy {
+  @include font(12, 600, 22);
+
+  margin-bottom: 5px;
+}
+
+.page-footer__policy {
+  @extend %link;
+  color: inherit;
+
+  @include font(12, 400, 22);
+}
